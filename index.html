@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+ <input type="text" class="monthYearRangeInput" placeholder="Select Month and Year Range">
+ <button id="getValue">Get </button>
+ <script type="text/javascript" src="test.js"></script>
+ <script>
+    const input = document.querySelector(".monthYearRangeInput");
+    const monthYearPicker = new MonthYearPicker(input);
+
+    var elem = document.getElementById('getValue');
+    elem.addEventListener('click',function(){
+        const selectedValues = monthYearPicker.getValue();
+        console.log(selectedValues);
+    })
+ </script>
+</body>
+</html>

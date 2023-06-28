@@ -1,0 +1,147 @@
+.picker {
+    position: relative;
+    display: inline-block;
+    top: 22px;
+   
+}
+  .monthYearInput {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  .picker-dropdown-1 {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    height: 325px;
+    width: 330px;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -2px 2px 6px rgba(0, 17, 51, 0.04), 0 8px 10px rgba(0, 17, 51, 0.08);
+  }
+
+  .picker-dropdown-2 {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 340px;
+    display: none;
+    background-color: #fff;
+    height: 325px;
+    width: 330px;
+    border: 1px solid #ccc;
+    border-left: none;
+    box-shadow: 6px 2px 6px rgba(0, 17, 51, 0.1), 8px 0 10px rgba(0, 17, 51, 0.08);
+  }
+  
+  .picker-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e4e3e3;
+  }
+  
+  .picker-year button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .picker-months {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    padding: 10px;
+    padding-top: 16px;
+  }
+  
+  .month {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #202020;
+    height: 36px;
+    width: 94px;
+    font-weight: 100;
+    padding-top: 1px;
+
+  }
+
+  .month:hover{
+    background: #eef6fd;
+  }
+  
+.apply-btn-div{
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid;
+  top: 100%;
+  left: 0;
+  height: 20px;
+  left: 15px;
+  top: 300px;
+  display: none;
+  column-gap: 30px;
+  width: 100%;
+}
+
+.apply-btn{
+  background: #007bff;
+  padding: 2px 12px 2px 12px;
+  border: 0px;
+  color: #fff;
+  display: inline;
+  height: 20px;
+}
+
+
+.clear-btn{
+  background: #ff002f;
+  padding: 2px 12px 2px 12px;
+  border: 0px;
+  display: inline;
+  color: #fff;
+  height: 20px;
+}
+
+
+.month.selected {
+  background-color: #0357ff;
+  color: #fff;
+  font-weight: 700;
+  
+}
+
+.selectedYear{
+  padding-left:110px ;
+  padding-right: 110px;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 36px;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.month-picker-input {
+  border: none;
+  height: 30px;
+  width: 200px;
+  font-size: 14px;
+  border-bottom: 1px solid gray;
+  transition: border-bottom 0.3s ease; 
+}
+
+.month-picker-input:focus {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid blue;
+}

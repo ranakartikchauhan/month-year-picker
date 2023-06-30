@@ -12,22 +12,11 @@
     
  <input type="text" class="monthYearRangeInput" placeholder="Select Month and Year Range">
 
- <input type="text" id="myid" placeholder="Date month">
-
-
  <button id="getValue">Get </button>
  <script type="text/javascript" src="month-year-picker.js"></script>
  <script>
     const input = document.querySelector(".monthYearRangeInput");
     const monthYearPicker = new MonthYearPicker(input);
-    const input2 =  document.getElementById('myid');
-    new MonthYearPicker(input2);
-
-    var elem = document.getElementById('getValue');
-    elem.addEventListener('click',function(){
-        const selectedValues = monthYearPicker.getValue();
-        console.log(selectedValues);
-    })
  </script>
 </body>
 </html>

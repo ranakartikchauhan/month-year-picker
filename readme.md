@@ -15,4 +15,4 @@ const monthYearPicker = new MonthYearPicker(input);
 const selectedValues = monthYearPicker.getValue();
 console.log(selectedValues);
 
-See Live example - https://ranakartikchauhan.github.io/testmonth/
+See Live example - https://ranakartikchauhan.github.io/month-year-picker/
